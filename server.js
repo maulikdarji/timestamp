@@ -35,7 +35,7 @@ http.createServer(function (req,res) {
     }
   
     var op={
-    'unix':unix,
+    'unix':unix/1000,
     'natural':natural
     };
     res.writeHead(200, {'Content-type':'application/json'});
